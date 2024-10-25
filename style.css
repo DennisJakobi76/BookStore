@@ -6,9 +6,39 @@ header {
 main {
     background-color: var(--main-bg);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 footer {
     background-color: var(--header-and-footer-bg);
     height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.header-and-footer-container {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+}
+
+.header-and-footer-img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+    object-position: center;
+    margin-right: 8px;
+}
+
+.header-and-footer-color-headline {
+    color: var(--standard-orange);
+}
+
+.header-and-footer-headline-container {
+    margin-right: 5px;
 }

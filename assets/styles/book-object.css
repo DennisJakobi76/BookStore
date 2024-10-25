@@ -1,0 +1,28 @@
+.book-object-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--book-object-bg);
+    border-radius: 15px;
+    margin-top: 32px;
+}
+
+.book-object-title-container {
+    padding: 16px;
+}
+
+.book-object-img-container {
+    width: 100%;
+    border-top: 4px solid var(--book-object-separator-color);
+    display: flex;
+    justify-content: center;
+    background-image: var(--book-object-radial--gradient);
+}
+
+.book-object-img {
+    width: 128px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}

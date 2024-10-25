@@ -1,7 +1,12 @@
 * {
-    --standart-text-color: rgba(254, 254, 254, 0.404);
+    --standard-text-color: rgba(242, 246, 252);
     --header-and-footer-bg: rgba(8, 32, 41);
     --main-bg: rgba(5, 23, 30);
     --img-drop-shadow: drop-shadow(0px 0px 4px rgba(62, 75, 192, 0.9));
     --img-drop-shadow-hover: drop-shadow(0px 0px 4px rgb(118, 128, 235));
+    --standard-orange: rgba(254, 91, 78);
+    --book-object-bg: rgba(13, 50, 64);
+    --book-object-accent: rgba(17, 71, 88);
+    --book-object-radial--gradient: radial-gradient(rgba(17, 71, 88) 64%, rgba(13, 50, 64));
+    --book-object-separator-color: rgba(61, 119, 145);
 }

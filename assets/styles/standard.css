@@ -7,7 +7,7 @@
     box-sizing: border-box;
     margin: 0;
     scroll-behavior: smooth;
-    color: var(--standart-text-color);
+    color: var(--standard-text-color);
 }
 
 body {
