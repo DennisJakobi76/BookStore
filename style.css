@@ -1,0 +1,14 @@
+header {
+    background-color: var(--header-and-footer-bg);
+    height: 100px;
+}
+
+main {
+    background-color: var(--main-bg);
+    height: 100vh;
+}
+
+footer {
+    background-color: var(--header-and-footer-bg);
+    height: 100px;
+}
