@@ -26,3 +26,33 @@
     object-fit: cover;
     object-position: center;
 }
+
+.book-object-description-container {
+    width: 100%;
+}
+
+.book-object-price-and-like-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 4px solid var(--book-object-separator-color);
+    padding: 16px;
+}
+
+.book-object-like-container {
+    display: flex;
+}
+
+#book-object-like-btn {
+    background-color: var(--book-object-bg);
+    border: 0;
+}
+
+#book-object-like-btn-img {
+    width: 16px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    aspect-ratio: 1/1;
+    background-color: var(--book-object-bg);
+}
