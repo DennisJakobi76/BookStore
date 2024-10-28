@@ -39,6 +39,11 @@
     padding: 16px;
 }
 
+#book-object-price-span {
+    color: var(--standard-orange);
+    font-weight: 600;
+}
+
 .book-object-like-container {
     display: flex;
 }
@@ -55,4 +60,10 @@
     object-position: center;
     aspect-ratio: 1/1;
     background-color: var(--book-object-bg);
+}
+
+.book-object-description-details-container {
+    padding-left: 16px;
+    padding-bottom: 16px;
+    font-size: 12px;
 }
