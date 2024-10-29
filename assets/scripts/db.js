@@ -173,3 +173,9 @@ let books = [
         ],
     },
 ];
+
+function getArrayOfBookObjects(array) {
+    return array;
+}
+
+getArrayOfBookObjects(books);

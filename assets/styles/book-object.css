@@ -6,6 +6,7 @@
     background-color: var(--book-object-bg);
     border-radius: 15px;
     margin-top: 32px;
+    /* margin-bottom: 32px; */
     min-width: 362px;
     max-width: 362px;
 }
@@ -60,10 +61,10 @@
     border: 0;
 }
 
-#book-object-like-btn-img {
+#book-object-like-btn img {
     width: 16px;
     height: auto;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
     aspect-ratio: 1/1;
     background-color: var(--book-object-bg);
