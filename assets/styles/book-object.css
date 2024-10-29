@@ -7,6 +7,14 @@
     border-radius: 15px;
     margin-top: 32px;
     min-width: 362px;
+    max-width: 362px;
+}
+
+.book-object-section {
+    width: 100%;
+    display: flex;
+    border-top: 4px solid var(--book-object-separator-color);
+    padding: 16px;
 }
 
 .book-object-title-container {
@@ -14,9 +22,6 @@
 }
 
 .book-object-img-container {
-    width: 100%;
-    border-top: 4px solid var(--book-object-separator-color);
-    display: flex;
     justify-content: center;
     background-image: var(--book-object-radial--gradient);
 }
@@ -50,6 +55,7 @@
 }
 
 #book-object-like-btn {
+    cursor: pointer;
     background-color: var(--book-object-bg);
     border: 0;
 }
@@ -63,8 +69,67 @@
     background-color: var(--book-object-bg);
 }
 
+.liked {
+    content: url("../img/icons/heart.png");
+}
+
 .book-object-description-details-container {
     padding-left: 16px;
     padding-bottom: 16px;
     font-size: 12px;
+}
+
+.book-object-commentary-container {
+    flex-direction: column;
+}
+
+#book-object-comment-table {
+    width: 100%;
+    font-size: 12px;
+    border-spacing: 0 8px;
+    margin-top: 8px;
+}
+
+#book-object-comment-table tbody {
+    display: block;
+    height: 100px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#book-object-comment-table td {
+    vertical-align: top;
+}
+
+#book-object-comment-table td:nth-child(odd) {
+    width: 160px;
+}
+
+#book-object-user-comment-input {
+    width: 90%;
+    border: 0;
+    padding: 6px;
+    border-bottom: 2px solid var(--input-border-color);
+    color: var(--input-text-color);
+    background-color: var(--book-object-accent);
+}
+
+.book-object-comment-input-and-button-container {
+    display: flex;
+}
+
+#book-object-send-message-btn {
+    background-color: var(--book-object-bg);
+    border: 0;
+}
+
+#book-object-send-message-btn {
+    cursor: pointer;
+}
+
+#book-object-message-btn-img {
+    width: 32px;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
 }

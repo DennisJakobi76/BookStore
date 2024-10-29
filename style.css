@@ -42,3 +42,18 @@ footer {
 .header-and-footer-headline-container {
     margin-right: 5px;
 }
+
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius: 2px;
+    background-color: var(--header-and-footer-bg);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background-color: var(--scrollbar-color);
+}
+
+::placeholder {
+    color: var(--input-text-color);
+}

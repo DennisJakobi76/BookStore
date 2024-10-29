@@ -10,4 +10,7 @@
     --book-object-accent: rgba(17, 71, 88);
     --book-object-radial--gradient: radial-gradient(rgba(17, 71, 88) 64%, rgba(13, 50, 64));
     --book-object-separator-color: rgba(61, 119, 145);
+    --scrollbar-color: rgba(110, 187, 215);
+    --input-border-color: rgba(92, 152, 176);
+    --input-text-color: rgba(97, 140, 155);
 }
