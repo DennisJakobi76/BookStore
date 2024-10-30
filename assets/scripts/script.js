@@ -9,10 +9,10 @@ function toggleLike(id) {
     likeBtnImg = document.getElementById(`book-object-like-btn-img${id}`);
     likeBtnImg.classList.toggle("liked");
     isLiked = allBooks[id].liked;
-    if (isLiked) {
-        allBooks[id].liked = false;
-    } else {
+    if (likeBtnImg.classList.contains("liked")) {
         allBooks[id].liked = true;
+    } else {
+        allBooks[id].liked = false;
     }
 
     countLikes(id);
@@ -58,7 +58,24 @@ function countLikes(id) {
     }
 }
 
+function savePageToLocalStorage() {
+    let pageContent = document.getElementById("main").innerHTML;
+    localStorage.clear();
+    localStorage.setItem("main_html", pageContent);
+}
+
+function getPageFromLocalStorage() {
+    if (localStorage.getItem("main_html")) {
+        document.getElementById("main").innerHTML = localStorage.getItem("main_html");
+    }
+}
+
 function init() {
     allBooks = getArrayOfBookObjects(books);
-    getObjects(books);
+
+    if (localStorage.getItem("main_html")) {
+        getPageFromLocalStorage();
+    } else {
+        getObjects(books);
+    }
 }
