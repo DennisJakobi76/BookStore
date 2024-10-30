@@ -1,0 +1,38 @@
+@media (max-width: 550px) {
+    .header-and-footer-img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .header-and-footer-container h1 {
+        font-size: 24px;
+    }
+
+    .header-and-footer-container h2 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header-and-footer-img {
+        width: 24px;
+        height: 24px;
+    }
+
+    .header-and-footer-container h1 {
+        font-size: 20px;
+    }
+
+    .header-and-footer-container h2 {
+        font-size: 12px;
+    }
+
+    .book-object-container {
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .book-object-title {
+        font-size: 18px;
+    }
+}
