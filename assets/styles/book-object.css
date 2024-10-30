@@ -55,13 +55,13 @@
     display: flex;
 }
 
-#book-object-like-btn {
+.book-object-like-btn-class {
     cursor: pointer;
     background-color: var(--book-object-bg);
     border: 0;
 }
 
-#book-object-like-btn img {
+.book-object-like-btn-class img {
     width: 16px;
     height: auto;
     object-fit: contain;
@@ -84,29 +84,29 @@
     flex-direction: column;
 }
 
-#book-object-comment-table {
+.book-object-table-container table {
     width: 100%;
     font-size: 12px;
     border-spacing: 0 8px;
     margin-top: 8px;
 }
 
-#book-object-comment-table tbody {
+.book-object-table-container table tbody {
     display: block;
     height: 100px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
-#book-object-comment-table td {
+.book-object-table-container table td {
     vertical-align: top;
 }
 
-#book-object-comment-table td:nth-child(odd) {
+.book-object-table-container table td:nth-child(odd) {
     width: 160px;
 }
 
-#book-object-user-comment-input {
+.book-object-user-comment-input-class {
     width: 90%;
     border: 0;
     padding: 6px;
@@ -119,16 +119,13 @@
     display: flex;
 }
 
-#book-object-send-message-btn {
+.book-object-send-message-btn-class {
     background-color: var(--book-object-bg);
     border: 0;
-}
-
-#book-object-send-message-btn {
     cursor: pointer;
 }
 
-#book-object-message-btn-img {
+.book-object-message-btn-img-class {
     width: 32px;
     height: auto;
     object-fit: cover;

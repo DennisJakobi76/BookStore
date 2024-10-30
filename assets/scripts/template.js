@@ -19,15 +19,16 @@ function renderBookObject(bookObject, id) {
                         </div>
                         <div class="book-object-like-container">
                             <div class="book-object-like-counter-container">
-                                <span id="book-object-like-counter-span">${bookObject.likes}</span>
+                                <span id="book-object-like-counter-span${id}" class="book-object-like-counter-span-class">${bookObject.likes}</span>
                             </div>
                             <div class="book-object-like-button-container">
-                                <button id="book-object-like-btn">
+                                <button id="book-object-like-btn${id}" class="book-object-like-btn-class">
                                     <img
                                         id="book-object-like-btn-img${id}"
+                                        class="book-object-like-btn-img-class"
                                         src="./assets/img/icons/empty_heart.png"
                                         alt="Like Schaltfläche in Form eines Herzens"
-										onclick="toggleLike()"
+										onclick="toggleLike(${id})"
                                     />
                                 </button>
                             </div>
@@ -59,33 +60,46 @@ function renderBookObject(bookObject, id) {
                     </div>
                     <div class="book-object-comment-and-user-container">
                         <div class="book-object-table-container">
-                            <table id="book-object-comment-table">
-                                <tr>
-                                    <td id="userName+userCounter">[Leser123]</td>
-                                    <td id="userComment+userCounter">: Ein faszinierendes Abenteuerbuch, das mich von der ersten Seite an gefesselt hat.</td>
-                                </tr>
-                                <tr>
-                                    <td id="userNameUserCounter">[Leser123]</td>
-                                    <td id="userCommentUserCounter">: Ein faszinierendes Abenteuerbuch, das mich von der ersten Seite an gefesselt hat.</td>
-                                </tr>
+                            <table id="book-object-comment-table${id}">
                             </table>
                         </div>
                         <div class="book-object-comment-input-and-button-container">
                             <input
-                                id="book-object-user-comment-input"
+                                id="book-object-user-comment-input${id}"
+                                class="book-object-user-comment-input-class"
                                 type="text"
                                 placeholder="Schreibe deinen Kommentar ..."
                             />
-                            <button id="book-object-send-message-btn">
+                            <button id="book-object-send-message-btn${id}" class="book-object-send-message-btn-class">
                                 <img
-                                    id="book-object-message-btn-img"
+                                    id="book-object-message-btn-img${id}"
+                                    class="book-object-message-btn-img-class"
                                     src="./assets/img/icons/send_message.png"
                                     alt="Absendeknopf in Form eins Papierfliegers"
-									onclick="postMessage()"
+									onclick="postMessage(${id})"
                                 />
                             </button>
                         </div>
                     </div>
                 </div>
             </div>`;
+}
+
+function renderCommentTable(bookObject, id) {
+    let commentEntry;
+
+    const commentTable = document.getElementById(`book-object-comment-table${id}`);
+    if (bookObject.comments.length > 0) {
+        for (j = 0; j < bookObject.comments.length; j++) {
+            let newChild = document.createElement("tr");
+
+            commentEntry = `<tr>
+                            <td id="userName${j}">[ ${bookObject.comments[j].name} ]</td>
+                            <td id="userComment${j}">: ${bookObject.comments[j].comment}</td>
+                        </tr>`;
+
+            newChild.innerHTML = commentEntry;
+            commentTable.appendChild(newChild);
+        }
+    }
 }
